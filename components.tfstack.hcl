@@ -60,7 +60,7 @@ component "ec2" {
   source = "./ec2"
 
   providers = {
-    random = provider.aws.this
+    aws = provider.aws.this
   }
 }
 
