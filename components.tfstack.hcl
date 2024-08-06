@@ -61,6 +61,7 @@ component "ec2" {
 
   providers = {
     aws = provider.aws.this
+    region = "us-west-1"
   }
 }
 
