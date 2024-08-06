@@ -8,6 +8,9 @@ variable "prefix" {
 variable "instances" {
   type = number
 }
+variable "region" {
+  type = string
+}
 
 required_providers {
   random = {
