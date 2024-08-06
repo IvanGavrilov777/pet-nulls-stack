@@ -28,9 +28,7 @@ required_providers {
 
 provider "random" "this" {}
 provider "null" "this" {}
-provider "aws" "this" {
-region = "us-west-1"
-}
+provider "aws" "this" {}
 
 
 component "pet" {
