@@ -5,6 +5,7 @@ deployment "simple" {
   inputs = {
     prefix           = "simple"
     instances        = 1
+region = "us-west-1"
   }
 }
 
