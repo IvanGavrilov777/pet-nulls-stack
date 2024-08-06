@@ -19,9 +19,11 @@ required_providers {
     source  = "hashicorp/null"
     version = "~> 3.2.2"
   }
-aws = {
-source = "hashicorp/aws"
-version = "4.63.0"
+
+  aws = {
+    source = "hashicorp/aws"
+    version = "4.63.0"
+  }
 }
 
 provider "random" "this" {}
