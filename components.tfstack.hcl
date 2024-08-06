@@ -32,7 +32,7 @@ provider "aws" "this" {
 config {
     region = "us-west-1"
 }
-
+}
 
 component "pet" {
   source = "./pet"
