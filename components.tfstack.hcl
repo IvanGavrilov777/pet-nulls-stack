@@ -28,7 +28,10 @@ required_providers {
 
 provider "random" "this" {}
 provider "null" "this" {}
-provider "aws" "this" {}
+provider "aws" "this" {
+config {
+    region = "us-west-1"
+}
 
 
 component "pet" {
@@ -61,7 +64,6 @@ component "ec2" {
 
   providers = {
     aws = provider.aws.this
-    region = "us-west-1"
   }
 }
 
