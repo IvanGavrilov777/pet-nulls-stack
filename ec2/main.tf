@@ -1,7 +1,16 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "4.63.0"
+    }
+  }
+}
 
 provider "aws" {
 region = "us-west-1"
 }
+
 data "aws_ami" "ubuntu" {
   most_recent = true
 
