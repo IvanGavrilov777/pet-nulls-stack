@@ -10,6 +10,7 @@ deployment "simple" {
     instances        = 1
 region = "us-west-1"
   }
+identity_token = identity_token.aws.jwt
 }
 
 #deployment "complex" {
