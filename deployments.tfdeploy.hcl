@@ -9,7 +9,9 @@ deployment "simple" {
     prefix           = "simple"
     instances        = 1
 region = "us-west-1"
-identity_token = identity_token.aws.jwt
+
+    role_arn            = "arn:aws:iam::459933373272:oidc-provider/app.terraform.io"
+    identity_token_file = identity_token.aws.jwt_filename
   }
 
 }
