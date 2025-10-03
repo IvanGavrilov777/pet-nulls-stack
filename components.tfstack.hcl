@@ -5,9 +5,9 @@ variable "prefix" {
   type = string
 }
 
-#variable "instances" {
-#  type = number
-#}
+variable "instances" {
+  type = number
+}
 #variable "region" {
 #  type = string
 #}
