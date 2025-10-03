@@ -23,9 +23,9 @@
 #  }
 #}
 
-#deployment "vancho" {
-#  inputs = {
-#    prefix           = "complex"
- #   instances        = 3
- # }
-#}
+deployment "vancho" {
+  inputs = {
+    prefix           = "complex"
+    instances        = 3
+  }
+}
