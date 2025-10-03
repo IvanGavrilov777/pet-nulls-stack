@@ -5,20 +5,20 @@ variable "prefix" {
   type = string
 }
 
-variable "instances" {
-  type = number
-}
-variable "region" {
-  type = string
-}
+#variable "instances" {
+#  type = number
+#}
+#variable "region" {
+#  type = string
+#}
 
-variable "identity_token_file" {
-  type = string
-}
+#variable "identity_token_file" {
+#  type = string
+#}
 
-variable "role_arn" {
-  type = string
-}
+#variable "role_arn" {
+#  type = string
+#}
 
 
 required_providers {
