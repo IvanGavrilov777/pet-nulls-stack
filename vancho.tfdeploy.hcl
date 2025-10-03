@@ -3,7 +3,7 @@
 #identity_token "aws" {
 #  audience = ["aws.workload.identity"]
 #}
-
+#123
 #deployment "simple" {
 #  inputs = {
 #    prefix           = "simple"
