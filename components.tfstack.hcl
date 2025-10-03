@@ -32,23 +32,23 @@ required_providers {
     version = "~> 3.2.2"
   }
 
-  aws = {
-    source = "hashicorp/aws"
-    version = "5.61.0"
-  }
+ # aws = {
+ #   source = "hashicorp/aws"
+ #   version = "5.61.0"
+ # }
 }
 
 provider "random" "this" {}
 provider "null" "this" {}
-provider "aws" "this" {
-config {
-    region = var.region
-    assume_role_with_web_identity {
-      role_arn                = var.role_arn
-      web_identity_token_file = var.identity_token_file
-    }
-}
-}
+#provider "aws" "this" {
+#config {
+#    region = var.region
+#    assume_role_with_web_identity {
+#      role_arn                = var.role_arn
+#      web_identity_token_file = var.identity_token_file
+#    }
+#}
+#}
 
 component "pet" {
   source = "./pet"
@@ -75,11 +75,11 @@ component "nulls" {
   }
 }
 
-component "ec2" {
-  source = "./ec2"
-
-  providers = {
-    aws = provider.aws.this
-  }
-}
+#component "ec2" {
+#  source = "./ec2"
+#
+#  providers = {
+#    aws = provider.aws.this
+#  }
+#}
 
