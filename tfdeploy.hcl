@@ -25,7 +25,7 @@
 
 deployment "vancho" {
   inputs = {
-    prefix           = "complex"
+    prefix           = "vancho"
     instances        = 3
   }
 }
