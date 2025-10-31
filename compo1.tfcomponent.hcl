@@ -8,7 +8,7 @@ variable "prefix" {
 variable "instances" {
   type = number
 }
-#variable "region" {
+##variable "region" {
 #  type = string
 #}
 
