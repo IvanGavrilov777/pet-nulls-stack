@@ -72,6 +72,7 @@ component "nulls" {
 
   providers = {
     null = provider.null.this
+    random = provider.random.this
   }
 }
 
