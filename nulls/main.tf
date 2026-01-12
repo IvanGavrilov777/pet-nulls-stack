@@ -31,7 +31,7 @@ module "repo" {
 
 module "pet" {
   source  = "app.terraform.io/ivan-premium-trial/pet/random"
-  version = "11.0.0"
+  version = "12.0.0"
 }
 
 resource "null_resource" "this" {
