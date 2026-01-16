@@ -22,12 +22,12 @@ variable "instances" {
   type = number
 }
 
-/*
+
 module "repo" {
   source  = "app.terraform.io/ivan-premium-trial/repo/tags"
   version = "499.0.0"
 }
-*/
+
 
 module "pet" {
   source  = "app.terraform.io/ivan-premium-trial/pet/random"
