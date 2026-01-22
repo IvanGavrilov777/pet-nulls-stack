@@ -29,7 +29,6 @@ store "varset" "tfe_auth" {
 
 deployment "vancho" {
   inputs = {
-    TFE_TOKEN = store.varset.tfe_auth.TFE_TOKEN
     prefix           = "vancho"
     instances        = 3
   }

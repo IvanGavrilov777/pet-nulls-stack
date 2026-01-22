@@ -8,6 +8,8 @@ variable "prefix" {
 variable "instances" {
   type = number
 }
+
+#variable "TFE_TOKEN"{}
 ##variable "region" {
 #  type = string
 #}
@@ -63,6 +65,7 @@ component "pet" {
 
   inputs = {
     prefix = var.prefix
+    
   }
 
   providers = {
