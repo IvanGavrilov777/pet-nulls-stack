@@ -19,6 +19,7 @@ variable "prefix" {
 }
 
 variable "TFE_TOKEN" {
+  type = string
   ephemeral = true
   sensitive = true
 }
