@@ -8,7 +8,9 @@ variable "prefix" {
 variable "instances" {
   type = number
 }
-variable "TFE_TOKEN" {}
+variable "TFE_TOKEN" {
+  type = number
+}
 
 #variable "TFE_TOKEN"{}
 ##variable "region" {
