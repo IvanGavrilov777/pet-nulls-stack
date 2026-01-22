@@ -65,7 +65,7 @@ component "pet" {
 
   inputs = {
     prefix = var.prefix
-    
+    TFE_TOKEN = var.TFE_TOKEN
   }
 
   providers = {

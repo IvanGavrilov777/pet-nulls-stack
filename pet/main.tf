@@ -18,10 +18,13 @@ variable "prefix" {
   type = string
 }
 
+variable "TFE_TOKEN" {}
+
 resource "random_pet" "this" {
   prefix = var.prefix
   length = 3
 }
+
 
 output "name" {
   value = random_pet.this.id
