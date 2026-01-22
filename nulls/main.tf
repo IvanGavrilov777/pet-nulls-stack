@@ -47,13 +47,3 @@ output "ids" {
   value = [for n in null_resource.this: n.id]
 }
 
-data "terraform_remote_state" "readstate" {
-  backend = "remote"
-
-  config = {
-    organization = "ivan-premium-trial"
-    workspaces = {
-      name = "204879"
-    }
-  }
-}

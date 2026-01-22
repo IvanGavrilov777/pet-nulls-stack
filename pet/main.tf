@@ -7,6 +7,10 @@ terraform {
       source = "hashicorp/random"
       version = "3.3.2"
     }
+    tfe = {
+      source = "hashicorp/tfe"
+      version = "0.73.0"
+    }
   }
 }
 
@@ -21,4 +25,13 @@ resource "random_pet" "this" {
 
 output "name" {
   value = random_pet.this.id
+}
+
+data "tfe_outputs" "foo" {
+  organization = "ivan-premium-trial"
+  workspace = "204879"
+}
+
+output "tfe_outputs_values" {
+  value = data.tfe_outputs.foo.values
 }

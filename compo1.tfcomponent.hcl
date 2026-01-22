@@ -32,6 +32,11 @@ required_providers {
     version = "~> 3.2.2"
   }
 
+  tfe = {
+    source = "hashicorp/tfe"
+    version = "0.73.0"
+  }
+
  # aws = {
  #   source = "hashicorp/aws"
  #   version = "5.61.0"
@@ -40,6 +45,9 @@ required_providers {
 
 provider "random" "this" {}
 provider "null" "this" {}
+provider "tfe" "this" {
+  token = ""
+}
 #provider "aws" "this" {
 #config {
 #    region = var.region
@@ -59,6 +67,7 @@ component "pet" {
 
   providers = {
     random = provider.random.this
+    tfe = provider.tfe.this
   }
 }
 
