@@ -41,7 +41,3 @@ resource "tfe_project" "test" {
   name = "newproject"
 }
 
-output "debug_env" {
-  value     = env("TFE_TOKEN")
-  sensitive = true
-}
