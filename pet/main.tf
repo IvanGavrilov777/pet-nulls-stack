@@ -19,6 +19,8 @@ variable "prefix" {
 }
 
 variable "TFE_TOKEN" {
+  ephemeral = true
+  sensitive = true
 }
 
 resource "random_pet" "this" {
