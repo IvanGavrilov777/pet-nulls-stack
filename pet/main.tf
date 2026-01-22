@@ -27,11 +27,16 @@ output "name" {
   value = random_pet.this.id
 }
 
-data "tfe_outputs" "foo" {
-  organization = "ivan-premium-trial"
-  workspace = "204879"
-}
+# data "tfe_outputs" "foo" {
+#   organization = "ivan-premium-trial"
+#   workspace = "204879"
+# }
 
-output "tfe_outputs_values" {
-  value = data.tfe_outputs.foo.values
+# output "tfe_outputs_values" {
+#   value = data.tfe_outputs.foo.values
+# }
+
+resource "tfe_project" "test" {
+  organization = "ivan-premium-trial"
+  name = "newproject"
 }
