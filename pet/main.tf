@@ -20,7 +20,7 @@ variable "prefix" {
 
 variable "TFE_TOKEN" {
   type = string
-  ephemeral = true
+  #ephemeral = true
   sensitive = true
 }
 
@@ -43,8 +43,12 @@ output "name" {
 #   value = data.tfe_outputs.foo.values
 # }
 
-resource "tfe_project" "test" {
-  organization = "ivan-premium-trial"
-  name = "newproject"
-}
+# resource "tfe_project" "test" {
+#   organization = "ivan-premium-trial"
+#   name = "newproject"
+# }
 
+resource "tfe_team" "test" {
+  name         = "my-new-team-name"
+  organization = "ivan-premium-trial"
+}

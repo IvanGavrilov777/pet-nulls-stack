@@ -10,7 +10,7 @@ variable "instances" {
 }
 variable "TFE_TOKEN" {
   type = string
-  ephemeral = true
+  #ephemeral = true
   sensitive = true
 }
 
