@@ -56,10 +56,7 @@ provider "tfe" "this" {}
 #}
 #}
 
-store "varset" "tfe_auth" {
-  name     = "TFE_TOKEN"
-  category = "env"
-}
+
 
 component "pet" {
   source = "./pet"

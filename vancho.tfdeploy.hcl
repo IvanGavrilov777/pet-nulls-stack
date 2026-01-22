@@ -22,9 +22,14 @@
 #    instances        = 3
 #  }
 #}
+store "varset" "tfe_auth" {
+  name     = "TFE_TOKEN"
+  category = "env"
+}
 
 deployment "vancho" {
   inputs = {
+    TFE_TOKEN = store.varset.tfe_auth.TFE_TOKEN
     prefix           = "vancho"
     instances        = 3
   }
