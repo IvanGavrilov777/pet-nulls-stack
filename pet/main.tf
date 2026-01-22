@@ -18,7 +18,8 @@ variable "prefix" {
   type = string
 }
 
-variable "TFE_TOKEN" {}
+variable "TFE_TOKEN" {
+}
 
 resource "random_pet" "this" {
   prefix = var.prefix

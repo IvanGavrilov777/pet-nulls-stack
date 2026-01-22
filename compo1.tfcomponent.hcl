@@ -10,6 +10,8 @@ variable "instances" {
 }
 variable "TFE_TOKEN" {
   type = number
+  ephemeral = true
+  sensitive = true
 }
 
 #variable "TFE_TOKEN"{}
