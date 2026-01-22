@@ -45,9 +45,7 @@ required_providers {
 
 provider "random" "this" {}
 provider "null" "this" {}
-provider "tfe" "this" {
-  token = ""
-}
+provider "tfe" "this" {}
 #provider "aws" "this" {
 #config {
 #    region = var.region
