@@ -38,11 +38,11 @@ output "name" {
 
 data "tfe_outputs" "foo" {
   organization = "ivan-premium-trial"
-  workspace = "204879"
+  workspace = "trust-relationship-for-stacks"
 }
 
 output "tfe_outputs_values" {
-  value = data.tfe_outputs.foo.values
+  value = data.tfe_outputs.foo.values.role_arn
   sensitive = true
 }
 
