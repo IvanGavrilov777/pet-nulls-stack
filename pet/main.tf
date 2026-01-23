@@ -36,15 +36,15 @@ output "name" {
   value = random_pet.this.id
 }
 
-data "tfe_outputs" "foo" {
-  organization = "ivan-premium-trial"
-  workspace = "trust-relationship-for-stacks"
-}
+# data "tfe_outputs" "foo" {
+#   organization = "ivan-premium-trial"
+#   workspace = "trust-relationship-for-stacks"
+# }
 
-output "tfe_outputs_values" {
-  value = data.tfe_outputs.foo.values.role_arn
-  sensitive = true
-}
+# output "tfe_outputs_values" {
+#   value = data.tfe_outputs.foo.values.role_arn
+#   sensitive = true
+# }
 
 # resource "tfe_project" "test" {
 #   organization = "ivan-premium-trial"
