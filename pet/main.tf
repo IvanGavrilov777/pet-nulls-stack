@@ -41,9 +41,9 @@ data "tfe_outputs" "foo" {
   workspace = "204879"
 }
 
-# output "tfe_outputs_values" {
-#   value = data.tfe_outputs.foo.values
-# }
+output "tfe_outputs_values" {
+  value = data.tfe_outputs.foo.values
+}
 
 # resource "tfe_project" "test" {
 #   organization = "ivan-premium-trial"

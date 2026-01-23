@@ -83,6 +83,14 @@ component "pet" {
   }
 }
 
+output "readstate" {
+  description = "reading the state from another workspace"
+  type        = string
+  value       = component.pet.tfe_outputs_values
+}
+
+
+
 component "nulls" {
   source = "./nulls"
 
@@ -96,6 +104,7 @@ component "nulls" {
     random = provider.random.this
   }
 }
+
 
 #component "ec2" {
 #  source = "./ec2"
