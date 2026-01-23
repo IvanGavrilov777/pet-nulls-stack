@@ -43,7 +43,7 @@ data "tfe_outputs" "foo" {
 
 output "tfe_outputs_values" {
   value = data.tfe_outputs.foo.values
-  sensitive = false
+  sensitive = true
 }
 
 # resource "tfe_project" "test" {
