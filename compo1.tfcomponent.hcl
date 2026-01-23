@@ -89,6 +89,7 @@ output "readstate" {
   value       = component.pet.tfe_outputs_values
   sensitive = true
 }
+#12
 
 
 
