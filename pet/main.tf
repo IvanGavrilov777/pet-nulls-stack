@@ -18,17 +18,13 @@ variable "prefix" {
   type = string
 }
 
-variable "TFE_TOKEN" {
-  type = string
-  ephemeral = true
-  sensitive = true
-}
+# variable "TFE_TOKEN" {
+#   type = string
+#   ephemeral = true
+#   sensitive = true
+# }
 
-provider "tfe" "this" {
-  config {
-    token    = var.TFE_TOKEN
-  }
-}
+
 
 resource "random_pet" "this" {
   prefix = var.prefix

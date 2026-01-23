@@ -10,7 +10,7 @@ variable "instances" {
 }
 variable "TFE_TOKEN" {
   type = string
-  #ephemeral = true
+  ephemeral = true
   sensitive = true
 }
 
@@ -52,7 +52,11 @@ required_providers {
 
 provider "random" "this" {}
 provider "null" "this" {}
-provider "tfe" "this" {}
+provider "tfe" "this" {
+  config {
+    token = var.TFE_TOKEN
+  }
+}
 #provider "aws" "this" {
 #config {
 #    region = var.region
@@ -70,7 +74,7 @@ component "pet" {
 
   inputs = {
     prefix = var.prefix
-    TFE_TOKEN = var.TFE_TOKEN
+    #TFE_TOKEN = var.TFE_TOKEN
   }
 
   providers = {
