@@ -24,7 +24,7 @@ variable "TFE_TOKEN" {
   sensitive = true
 }
 
-provider "tfe " {
+provider "tfe" "this" {
   config {
     token    = var.TFE_TOKEN
   }
