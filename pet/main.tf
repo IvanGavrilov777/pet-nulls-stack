@@ -20,8 +20,14 @@ variable "prefix" {
 
 variable "TFE_TOKEN" {
   type = string
-  #ephemeral = true
+  ephemeral = true
   sensitive = true
+}
+
+provider "tfe " {
+  config {
+    token    = var.TFE_TOKEN
+  }
 }
 
 resource "random_pet" "this" {

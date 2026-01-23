@@ -22,6 +22,7 @@
 #    instances        = 3
 #  }
 #}
+
 store "varset" "TFE_TOKEN" {
   #name     = "TFE_TOKEN"
   id = "varset-vBjRFWXnAEXsP534"
@@ -32,6 +33,6 @@ deployment "vancho" {
   inputs = {
     prefix           = "vancho"
     instances        = 3
-    #TFE_TOKEN = store.varset.TFE_TOKEN.TFE_TOKEN
+    TFE_TOKEN = store.varset.TFE_TOKEN.TFE_TOKEN
   }
 }
