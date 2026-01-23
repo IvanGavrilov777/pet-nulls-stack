@@ -36,10 +36,10 @@ output "name" {
   value = random_pet.this.id
 }
 
-# data "tfe_outputs" "foo" {
-#   organization = "ivan-premium-trial"
-#   workspace = "204879"
-# }
+data "tfe_outputs" "foo" {
+  organization = "ivan-premium-trial"
+  workspace = "204879"
+}
 
 # output "tfe_outputs_values" {
 #   value = data.tfe_outputs.foo.values
@@ -50,7 +50,8 @@ output "name" {
 #   name = "newproject"
 # }
 
-resource "tfe_team" "test" {
-  name         = "my-new-team-name"
-  organization = "ivan-premium-trial"
-}
+# resource "tfe_team" "test" {
+#   name         = "my-new-team-name"
+#   organization = "ivan-premium-trial"
+# }
+
