@@ -85,7 +85,7 @@ component "pet" {
 
 output "readstate" {
   description = "reading the state from another workspace"
-  #type        = object
+  type        = object
   value       = component.pet.tfe_outputs_values
   sensitive = true
 }
