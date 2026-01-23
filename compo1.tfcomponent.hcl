@@ -83,12 +83,12 @@ component "pet" {
   }
 }
 
-# output "readstate" {
-#   description = "reading the state from another workspace"
-#   type        = string
-#   value       = component.pet.tfe_outputs_values
-#   sensitive = true
-# }
+output "readstate" {
+  description = "reading the state from another workspace"
+  type        = string
+  value       = component.pet.tfe_outputs_values
+  sensitive = true
+}
 #12
 
 
