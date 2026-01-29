@@ -97,6 +97,12 @@ output "name" {
   value = component.pet.name
 }
 
+output "name2" {
+  description = "asdad"
+  type = string
+  value = component.pet.name
+}
+
 
 
 component "nulls" {

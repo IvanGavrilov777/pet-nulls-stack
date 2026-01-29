@@ -50,5 +50,5 @@ publish_output "name" {
 
 publish_output "not-another-name" {
   description = "asda"
-  value = deployment.vancho.name
+  value = deployment.vancho.name2
 }
