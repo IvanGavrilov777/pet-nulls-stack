@@ -30,10 +30,10 @@ module "repo" {
 
 */
 
-module "pet" {
-  source  = "app.terraform.io/ivan-premium-trial/pet/random"
-  version = "13.0.0"
-}
+# module "pet" {
+#   source  = "app.terraform.io/ivan-premium-trial/pet/random"
+#   version = "13.0.0"
+# }
 
 resource "null_resource" "this" {
   count = var.instances
