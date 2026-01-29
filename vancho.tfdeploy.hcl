@@ -36,3 +36,9 @@ deployment "vancho" {
     TFE_TOKEN = store.varset.TFE_TOKEN.TFE_TOKEN
   }
 }
+
+publish_output "publish_readstate" {
+  description = "publish"
+  value = deployment.vancho.readstate
+  sensitive = true
+}
