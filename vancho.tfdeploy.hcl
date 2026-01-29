@@ -40,5 +40,5 @@ deployment "vancho" {
 publish_output "publish_readstate" {
   description = "publish"
   value = deployment.vancho.readstate
-  sensitive = true
+  #sensitive = true
 }
