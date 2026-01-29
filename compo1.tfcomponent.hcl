@@ -91,6 +91,12 @@ output "readstate" {
 }
 #12
 
+output "name" {
+  description = "asdad"
+  type = string
+  value = component.pet.name
+}
+
 
 
 component "nulls" {

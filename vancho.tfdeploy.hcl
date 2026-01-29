@@ -42,3 +42,8 @@ publish_output "publish_readstate" {
   value = deployment.vancho.readstate
   #sensitive = true
 }
+
+publish_output "name" {
+  description = "asda"
+  value = deployment.vancho.name
+}
