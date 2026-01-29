@@ -47,3 +47,8 @@ publish_output "name" {
   description = "asda"
   value = deployment.vancho.name
 }
+
+publish_output "not-another-name" {
+  description = "asda"
+  value = deployment.vancho.name
+}
